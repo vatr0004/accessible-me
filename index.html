@@ -43,7 +43,7 @@
           <li>Phone: <span itemprop="phonenumber" role="information"> 613-000-0000</span></li>
         </ul>
         <h1>Address</h1>
-        <p itemprop="address" itemscope itemtype="https//schema.org/PostalAddress">
+        <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           Jambox Studios
           <span itemprop="streetAddress">123 Guitar Road</span>,
           Musicville, Danceistan
@@ -51,12 +51,12 @@
         </p>
       </section>
       <section class="contact-section" role="region">
-        <h1 id="contact">Contact Us</h1>
+        <h1 id="contact" itemscope itemtype="https://schema.org/ContactPoint">Contact Us</h1>
         <form action="thanks.html" role="form">
           <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
+          <input type="text" itemprop="name" placeholder="Full Name">
+          <input type="text" itemprop="email" placeholder="Email">
+          <input type="text" itemprop="text" placeholder="Subject">
           <b>Your Message</b>
           <textarea></textarea>
           <button type="submit" role="button">Send</button>
